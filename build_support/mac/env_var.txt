@@ -1,0 +1,19 @@
+# Env variables created for Pixar USD
+
+# Pixar USD Python Libs
+PYTHONPATH="/Users/Deepthu/Programming/pixarUSD/pxrUSD/lib/python:${PYTHONPATH}"
+export PYTHONPATH
+
+# Adding pixar USD to system path 
+PATH="/Users/Deepthu/Programming/pixarUSD/pxrUSD/bin:${PATH}"
+export PATH
+
+# Required only for building the mayaUSD plugin after that comment below var.
+#PYTHONPATH="/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages:${PYTHONPATH}"
+#export PYTHONPATH
+
+# Env variables created for Pixar’s USD completed.
+
+# Setting BOOST_ROOT path.
+#BOOST_ROOT="/usr/local/Cellar/boost/1.72.0_2"
+#export BOOST_ROOT

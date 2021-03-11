@@ -1,0 +1,61 @@
+usage: build.py [-h] [--generator GENERATOR] [-v VERBOSITY]
+                [--build-location BUILD_LOCATION]
+                [--install-location INSTALL_LOCATION]
+                [--maya-location MAYA_LOCATION]
+                [--pxrusd-location PXRUSD_LOCATION]
+                [--devkit-location DEVKIT_LOCATION]
+                [--build-debug | --build-release | --build-relwithdebug]
+                [--debug-python] [--qt-location QT_LOCATION]
+                [--build-args [BUILD_ARGS [BUILD_ARGS ...]]]
+                [--ctest-args [CTEST_ARGS [CTEST_ARGS ...]]]
+                [--stages [STAGES [STAGES ...]]] [-j JOBS]
+                [--redirect-outstream-file REDIRECT_OUTSTREAM_FILE]
+                workspace_location
+
+positional arguments:
+  workspace_location    Directory where the project use as a workspace to
+                        build and install plugin/libraries.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --generator GENERATOR
+                        CMake generator to use when building libraries with
+                        cmake
+  -v VERBOSITY, --verbosity VERBOSITY
+                        How much output to print while building: 0 = no
+                        output; 1 = warnings + status; 2 = info; 3 = command
+                        output and tracebacks (default: 1)
+  --build-location BUILD_LOCATION
+                        Set Build directory (default: <workspace_location
+                        >/build-location)
+  --install-location INSTALL_LOCATION
+                        Set Install directory (default: <workspace_location
+                        >/install-location)
+  --maya-location MAYA_LOCATION
+                        Directory where Maya is installed.
+  --pxrusd-location PXRUSD_LOCATION
+                        Directory where Pixar USD is installed.
+  --devkit-location DEVKIT_LOCATION
+                        Directory where Maya Devkit is installed.
+  --build-debug         Build in Debug mode (default: False)
+  --build-release       Build in Release mode (default: False)
+  --build-relwithdebug  Build in RelWithDebInfo mode (default: True)
+  --debug-python        Define Boost Python Debug if your Python library comes
+                        with Debugging symbols (default: False).
+  --qt-location QT_LOCATION
+                        Directory where Qt is installed.
+  --build-args [BUILD_ARGS [BUILD_ARGS ...]]
+                        Comma-separated list of arguments passed into CMake
+                        when building libraries
+  --ctest-args [CTEST_ARGS [CTEST_ARGS ...]]
+                        Comma-separated list of arguments passed into
+                        CTest.(e.g -VV, --output-on-failure)
+  --stages [STAGES [STAGES ...]]
+                        Comma-separated list of stages to execute.(possible
+                        stages: clean, configure, build, install, test,
+                        package)
+  -j JOBS, --jobs JOBS  Number of build jobs to run in parallel. (default: #
+                        of processors [4])
+  --redirect-outstream-file REDIRECT_OUTSTREAM_FILE
+                        Redirect output stream to a file. Set this flag to
+                        false to redirect output stream to console instead.

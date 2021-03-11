@@ -1,0 +1,108 @@
+// Copyright 2020 Autodesk
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+
+proc register(string $key, string $value) {
+    registerPluginResource("mayaUsdPlugin", $key, $value);
+}
+
+global proc string getMayaUsdString(string $key) {
+    return getPluginResource("mayaUsdPlugin", $key);
+}
+
+global proc mayaUSDRegisterStrings() {
+
+    register("kAllUsdFiles", "All USD Files");
+    register("kButtonSave", "Save");
+    register("kButtonCancel", "Cancel");
+    register("kCreateUsdStageFromFile", "Create USD Stage from File");
+    register("kCreateUsdStageFromFileOptions", "Create USD Stage from File Options");
+    register("kCreateStageFromFile", "Create Stage from File");
+    register("kDefaultPrim", "Default Prim");
+    register("kDefaultPrimAnn", "As part of its metadata, each stage can identify a default prim. This is the primitive that is referenced in if you reference in a file.");
+    register("kExcludePrimPaths", "Exclude Prim Paths:");
+    register("kExcludePrimPathsAnn", "Specify the path of a prim to exclude it from the viewport display. Multiple prim paths must be separated by a comma.");
+    register("kExcludePrimPathsSbm", "Specify the path of a prim to exclude it from the viewport display.");
+    register("kFileAnn", "Load in a file as the stage source.");
+    register("kLabelStage", "Stage");
+    register("kLabelStageSource", "Stage Source");
+    register("kLabelStageDisplay", "Stage Display");
+    register("kLoad", "Load");
+    register("kLoadAll", "Load All");
+    register("kLoadPayloads", "Load Payloads:");
+    register("kLoadPayloadsAnn", "When on, loads all prims marked as payloads. When off, all prims marked as payloads and their children are not loaded.");
+    register("kLoadPayloadsSbm", "Loads prims marked as payloads");
+    register("kMenuAddSublayer", "Add Sublayer");
+    register("kMenuAddParentLayer", "Add Parent Layer");
+    register("kMenuClear", "Clear");
+    register("kMenuRevertToFile", "Revert to File");
+    register("kMenuLayerEditor", "USD Layer Editor");
+    register("kMenuLayerEditorAnn", "Organize and edit USD data in layers");
+    register("kMenuLoadSublayers", "Load Sublayers...");
+    register("kMenuMute", "Mute");
+    register("kMenuPrintToScriptEditor", "Print to Script Editor");
+    register("kMenuRemove", "Remove");
+    register("kMenuSelectPrimsWithSpec", "Select Prims With Spec");
+    register("kMenuStageCreateMenuError", "Could not create mayaUSD create menu");
+    register("kMenuStageWithNewLayer", "Stage with New Layer");
+    register("kMenuStageWithNewLayerAnn", "Create a new, empty USD Stage");
+    register("kMenuStageFromFile", "Stage From File...");
+    register("kMenuStageFromFileAnn", "Create a USD Stage from an existing USD file");
+    register("kMenuStageFromFileOptionsAnn", "Create a USD Stage from an existing USD file options");
+    register("kMenuStageSubMenu", "Universal Scene Description (USD)");
+    register("kMenuStageSubMenuAnn", "Create a USD stage");
+    register("kMenuSaveAs", "Save As...");
+    register("kMenuSaveEdits", "Save Edits");
+    register("kMenuUnmute", "Unmute");
+    register("kPayloads", "Payloads");
+    register("kPayloadsAnn", "Select to load or unload all prims marked as payloads, including their descendants, into the stage.");
+    register("kPurposeAnn", "Toggle purpose categories on and off to change their visibility in the viewport.");
+    register("kPurposeLabel", "Purpose");
+    register("kPurposeOption1", "Guide");
+    register("kPurposeOption2", "Proxy");
+    register("kPurposeOption3", "Render");
+    register("kPrimPath", "Prim Path:");
+    register("kPrimPathAnn", "Loads the specified prim path. If a matching prim path is not found, all prims in the file are loaded.");
+    register("kPrimPathSbm", "Loads the specified prim path");
+    register("kRootLayer", "Root Layer");
+    register("kRootLayerAnn", "Identifies the root layer of a stage. If a file path is shown in this field, the root layer is a file on disk. If a layerName is shown in this field, the root layer is an anonymous layer.");
+    register("kSaveAndClose", "Save and Close");
+    register("kSaveOption1", "Save the Maya scene file and USD files.");
+    register("kSaveOption2", "Save all edits (including USD) to the Maya scene file.");
+    register("kSaveOption3", "Save the Maya scene file only (USD edits will not be saved).");
+    register("kSaveOptionAnn1", "Select this option to save your Maya scene file (.ma, .mb) and your USD files (.usd, .usda, .usdc) to disk respectively.");
+    register("kSaveOptionAnn2", "Select this option to save your current Maya session with in-memory USD edits into a Maya scene file on disk (.ma, .mb). Important: any files exceeding the limit of 2 GB cannot be saved.");
+    register("kSaveOptionAnn3", "Select this option to ignore all USD edits and save only your Maya scene file (.ma, .mb).");
+    register("kSaveOptionAsk", "Ask me");
+    register("kSaveOptionAskAnn", "If disabled, the selected USD save operation will always proceed.");
+    register("kSaveOptionNoPrompt", "Don't ask me again");
+    register("kSaveOptionNoPromptAnn", "You can re-enable this prompt under File|Save Scene Options.");
+    register("kSaveOptionTitle", "Save USD Options");
+    register("kSaveOptionUnsavedEdits", "You have unsaved USD edits. How would you like to proceed?");
+    register("kTimeAnn", "Edits the current time value of a stage, which corresponds to the animation frame drawn in the viewport. By default, this value connects to Maya's global time node.");
+    register("kTipYouCanChooseMultipleFiles", "<b>Tip:</b>  You can choose multiple files.");
+    register("kUnloadAll", "Unload All");
+    register("kUsdFileOptions", "USD File Options");
+    register("kUsdOptionsFrameLabel", "Universal Scene Description (USD) Options");
+    register("kSaveOption2GBWarning", "<b>Important</b>: per layer, any data exceeding the limit of 2GB will not be saved.");
+
+    // Register the strings from the python equivalent register function.
+    // Note: the strings from both the MEL and python register can be loaded
+    //       by either MEL or python. They all get registered together under
+    //       the 'mayaUsdPlugin' plugin.
+    python("import mayaUSDRegisterStrings; mayaUSDRegisterStrings.mayaUSDRegisterStrings()");
+
+    // load any localized resources
+    loadPluginLanguageResources("mayaUsdPlugin", "mayaUsdPlugin.pres.mel");
+}

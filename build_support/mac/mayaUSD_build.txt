@@ -1,0 +1,7 @@
+#Command
+
+python build.py --generator Ninja -v 3 --maya-location /Applications/Autodesk/maya2020 --pxrusd-location /Users/Deepthu/Programming/pixarUSD/pxrUSD --devkit-location /opt/local/mayaDevKits/2020 /Users/Deepthu/Programming/pixarUSD/mayaUSD --build-args="-DCMAKE_WANT_UFE_BUILD=OFF -DBoost_NO_BOOST_CMAKE=ON" --stages=clean,configure,build,install
+
+# Setting BOOST_ROOT path.
+#BOOST_ROOT="/usr/local/Cellar"
+#export BOOST_ROOT

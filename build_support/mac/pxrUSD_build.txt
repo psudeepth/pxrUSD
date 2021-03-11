@@ -1,0 +1,1 @@
+/Applications/Autodesk/maya2020/Maya.app/Contents/bin/mayapy ./build_scripts/build_usd.py --ptex --alembic --materialx --no-usdview /Users/Deepthu/Programming/pixarUSD/pxrUSD --build-args boost,"--with-date_time --with-thread --with-system --with-filesystem"

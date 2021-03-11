@@ -1,0 +1,1 @@
+python build.py --generator Ninja -v 3 --maya-location "C:\Program Files\Autodesk\maya2018" --pxrusd-location "C:\pxrUSD\pxrUSDCore" --devkit-location "C:\Program Files\Autodesk\Maya2018\devkit" --install-location "C:\pxrUSD\pxrUSDMayaCore" --build-args="-DBUILD_ADSK_PLUGIN=ON" "C:\pxrUSD\pxrUSDMayaCoreWorkspace"

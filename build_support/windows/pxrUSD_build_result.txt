@@ -1,0 +1,60 @@
+**********************************************************************
+** Visual Studio 2017 Developer Command Prompt v15.9.34
+** Copyright (c) 2017 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x64'
+
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community>cd c:\pxrUSD\USD
+
+c:\pxrUSD\USD>python build_scripts/build_usd.py --alembic --no-usdview C:\pxrUSD\pxrUSDCore --build-args boost,"--with-date_time --with-thread --with-system --with-filesystem"
+
+Building with settings:
+  USD source directory          c:\pxrUSD\USD
+  USD install directory         C:\pxrUSD\pxrUSDCore
+  3rd-party source directory    C:\pxrUSD\pxrUSDCore\src
+  3rd-party install directory   C:\pxrUSD\pxrUSDCore
+  Build directory               C:\pxrUSD\pxrUSDCore\build
+  CMake generator               Default
+  CMake toolset                 Default
+  Downloader                    curl
+
+  Building                      Shared libraries
+    Config                      Release
+    Imaging                     On
+      Ptex support:             Off
+      OpenVDB support:          Off
+      OpenImageIO support:      Off
+      OpenColorIO support:      Off
+      PRMan support:            Off
+    UsdImaging                  On
+      usdview:                  Off
+    Python support              On
+      Python 3:                 Off
+    Documentation               Off
+    Tests                       Off
+    Examples                    On
+    Tutorials                   On
+    Tools                       On
+    Alembic Plugin              On
+      HDF5 support:             Off
+    Draco Plugin                Off
+    MaterialX Plugin            Off
+
+  Dependencies                  zlib, boost, TBB, OpenEXR, Alembic, OpenSubdiv
+  Build arguments               boost: --with-date_time --with-thread --with-system --with-filesystem
+STATUS: Installing zlib...
+STATUS: Installing boost...
+STATUS: Installing TBB...
+STATUS: Installing OpenEXR...
+STATUS: Installing Alembic...
+STATUS: Installing OpenSubdiv...
+STATUS: Installing USD...
+
+Success! To use USD, please ensure that you have:
+
+    The following in your PYTHONPATH environment variable:
+    C:\pxrUSD\pxrUSDCore\lib\python
+
+    The following in your PATH environment variable:
+    C:\pxrUSD\pxrUSDCore\bin
+    C:\pxrUSD\pxrUSDCore\lib
