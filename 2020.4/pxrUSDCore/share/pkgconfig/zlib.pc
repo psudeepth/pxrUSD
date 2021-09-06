@@ -1,0 +1,13 @@
+prefix=D:/pxrUSD/2020.4/pxrUSDCore
+exec_prefix=D:/pxrUSD/2020.4/pxrUSDCore
+libdir=D:/pxrUSD/2020.4/pxrUSDCore/lib
+sharedlibdir=D:/pxrUSD/2020.4/pxrUSDCore/lib
+includedir=D:/pxrUSD/2020.4/pxrUSDCore/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.11
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

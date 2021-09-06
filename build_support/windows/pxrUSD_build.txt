@@ -1,1 +1,1 @@
-python build_scripts/build_usd.py --alembic --no-usdview C:\pxrUSD\pxrUSDCore --build-args boost,"--with-date_time --with-thread --with-system --with-filesystem"
+python build_scripts/build_usd.py --alembic D:\pxrUSD\2020.4\pxrUSDCore --build-args boost,"--with-date_time --with-thread --with-system --with-filesystem"

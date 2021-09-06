@@ -1,0 +1,69 @@
+{
+    "Plugins": [
+      {
+        "Info": {
+          "UsdMaya": {
+            "PrimReader": {
+              "providesTranslator": [
+                "UsdGeomCamera",
+                "UsdGeomMesh",
+                "UsdGeomNurbsCurves",
+                "UsdGeomNurbsPatch",
+                "UsdGeomScope",
+                "UsdGeomXform",
+                "UsdLuxCylinderLight",
+                "UsdLuxDiskLight",
+                "UsdLuxDistantLight",
+                "UsdLuxDomeLight",
+                "UsdLuxGeometryLight",
+                "UsdLuxRectLight",
+                "UsdLuxSphereLight",
+                "UsdShadeMaterial",
+                "UsdSkelRoot",
+                "UsdSkelSkeleton",
+                "MayaUsd_SchemasALMayaReference",
+                "MayaUsd_SchemasMayaReference"
+              ]
+            },
+            "PrimUpdater": {
+              "providesTranslator": [
+                "MayaUsd_SchemasALMayaReference",
+                "MayaUsd_SchemasMayaReference"
+              ]
+            },
+            "PrimWriter": {
+              "providesTranslator": [
+                "areaLight",
+                "camera",
+                "directionalLight",
+                "file",
+                "instancer",
+                "joint",
+                "locator",
+                "mesh",
+                "nParticle",
+                "nurbsCurve",
+                "nurbsSurface",
+                "particle",
+                "pointLight",
+                "PxrAovLight",
+                "PxrCylinderLight",
+                "PxrDiskLight",
+                "PxrDistantLight",
+                "PxrDomeLight",
+                "PxrEnvDayLight",
+                "PxrMeshLight",
+                "PxrRectLight",
+                "PxrSphereLight",
+                "spotLight",
+                "stroke"
+              ]
+            }
+          }
+        },
+        "LibraryPath": "../../../mayaUsd_Translators.dll",
+        "Name": "mayaUsd_Translators",
+        "Type": "library"
+      }
+    ]
+}

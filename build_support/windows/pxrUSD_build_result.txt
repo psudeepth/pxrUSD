@@ -1,19 +1,12 @@
-**********************************************************************
-** Visual Studio 2017 Developer Command Prompt v15.9.34
-** Copyright (c) 2017 Microsoft Corporation
-**********************************************************************
-[vcvarsall.bat] Environment initialized for: 'x64'
 
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Community>cd c:\pxrUSD\USD
-
-c:\pxrUSD\USD>python build_scripts/build_usd.py --alembic --no-usdview C:\pxrUSD\pxrUSDCore --build-args boost,"--with-date_time --with-thread --with-system --with-filesystem"
+D:\pxrUSD\2020.4\USD>python build_scripts/build_usd.py --alembic D:\pxrUSD\2020.4\pxrUSDCore --build-args boost,"--with-date_time --with-thread --with-system --with-filesystem"
 
 Building with settings:
-  USD source directory          c:\pxrUSD\USD
-  USD install directory         C:\pxrUSD\pxrUSDCore
-  3rd-party source directory    C:\pxrUSD\pxrUSDCore\src
-  3rd-party install directory   C:\pxrUSD\pxrUSDCore
-  Build directory               C:\pxrUSD\pxrUSDCore\build
+  USD source directory          D:\pxrUSD\2020.4\USD
+  USD install directory         D:\pxrUSD\2020.4\pxrUSDCore
+  3rd-party source directory    D:\pxrUSD\2020.4\pxrUSDCore\src
+  3rd-party install directory   D:\pxrUSD\2020.4\pxrUSDCore
+  Build directory               D:\pxrUSD\2020.4\pxrUSDCore\build
   CMake generator               Default
   CMake toolset                 Default
   Downloader                    curl
@@ -27,7 +20,7 @@ Building with settings:
       OpenColorIO support:      Off
       PRMan support:            Off
     UsdImaging                  On
-      usdview:                  Off
+      usdview:                  On
     Python support              On
       Python 3:                 Off
     Documentation               Off
@@ -40,10 +33,8 @@ Building with settings:
     Draco Plugin                Off
     MaterialX Plugin            Off
 
-  Dependencies                  zlib, boost, TBB, OpenEXR, Alembic, OpenSubdiv
+  Dependencies                  TBB, OpenEXR, Alembic, OpenSubdiv
   Build arguments               boost: --with-date_time --with-thread --with-system --with-filesystem
-STATUS: Installing zlib...
-STATUS: Installing boost...
 STATUS: Installing TBB...
 STATUS: Installing OpenEXR...
 STATUS: Installing Alembic...
@@ -53,8 +44,11 @@ STATUS: Installing USD...
 Success! To use USD, please ensure that you have:
 
     The following in your PYTHONPATH environment variable:
-    C:\pxrUSD\pxrUSDCore\lib\python
+    D:\pxrUSD\2020.4\pxrUSDCore\lib\python
 
     The following in your PATH environment variable:
-    C:\pxrUSD\pxrUSDCore\bin
-    C:\pxrUSD\pxrUSDCore\lib
+    D:\pxrUSD\2020.4\pxrUSDCore\bin
+    D:\pxrUSD\2020.4\pxrUSDCore\lib
+
+
+D:\pxrUSD\2020.4\USD>  

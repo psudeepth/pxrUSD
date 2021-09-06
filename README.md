@@ -1,8 +1,9 @@
 # pxrUSD
-Pixar USD build for Maya 2018.6 with Maya plugin.
+Pixar USD build for Maya 2018.6 and 2020.4 with Maya plugin.
 
 ## Build environment:<br/>
-Windows 10 October 2020 Update running on a Oracle VM VirtualBox (Version 6.1.18) on Macbook Air 2017 model with Mac OS Big Sur (11.2.1)
+2018.6: Windows 10 October 2020 Update running on a Oracle VM VirtualBox (Version 6.1.18) on Macbook Air 2017 model with Mac OS Big Sur (11.2.1).
+2020.4: Windows 10 October 2020 Update as main os running on workstation.
 
 ## Project execution:<br/>
 Project was build in the path C:\pxrUSD with Pixar USD build files in pxrUSDCore and Maya plugin build in pxrUSDMayaCore. for execution clone the repo to C:\ and to launch the Maya 
@@ -23,3 +24,4 @@ Initial testing of loading the plugins has be been done from the default build p
 1. Cloning the repo to a diffrent location ie server path and testing the working of pixar USD and Maya plugins.
 2. Exporting, importing, or referencing of USD files in maya.
 3. Pipeline integration.
+4. pxr plugin is not loading have to check on that.
